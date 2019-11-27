@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+/* ------------------------Variables */
+:root
+{
+  /* ----Colores */
+  --white-color: #F2F2F2;
+  --blue-color: #080C26;
+  --verde-color: #012326;
+  --verde2-color: #01403A;
+  --verde3-color: #08594A;
+  /* ----Colores */
+  /* ----Tipografia */
+  --tipografia: 'Open Sans Condensed', sans-serif;
+  --size: 40px;
+  --title: 50px;
+  /* ----Tipografia */
+
+}
+
+
+/* ------------------------Variables */
+
+
+body
+{
+  background-color: var(--verde2-color);
+  color: var(--white-color);
+  padding: 15px;
+  margin: 15px;
+  font-family: var(--tipografia);
+  font-size: var(--size);
+  line-height: 30px;
+}
+
+a
+{
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: var(--title);
+  text-decoration: underline;
+}
+
+a:hover
+{
+  color: var(--blue-color);
+  cursor: pointer;
+}
+
+nav, .img_logo
+  {
+    margin-top: -15px;
+    margin-left: -15px;
+    margin-right: -10px;
+    margin-bottom: -15px;
+}
+
+.img_logo
+{
+  background-color: var(--blue-color);
+  background-image: url("../images/nav.png");
+  height: 100%;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  border-top-width: 0px;
+  border-top-style: solid;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+}
+
+@keyframes fadeIn
+{
+  from
+  {
+    opacity: 0;
+  }
+  to
+  {
+    opacity: 1;
+  }
+}
+
+/*Responsive design*/
+@media (max-width: 600px)
+{
+  img
+  {
+    width: 350px;
+  }
+}

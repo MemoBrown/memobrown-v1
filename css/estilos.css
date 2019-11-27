@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+
+
+/* ------------------------Variables */
+:root
+{
+  /* -------------Colores */
+  --white-color: #F2F2F2;
+  --blue-color: #080C26;
+  --verde-color: #012326;
+  --verde2-color: #01403A;
+  --verde3-color: #08594A;
+  /* -------------Colores */
+
+
+}
+
+
+/* ------------------------Variables */
+
+
+body
+{
+  background-color: var(--blue-color);
+  background-image: url("../images/cover.png");
+  text-align: center;
+  background-size: cover;
+  }
+
+html, body
+{
+  padding; 0px;
+  margin: 0px;
+  font-family:'Open Sans Condensed', sans-serif;
+}
+
+nav, .img_logo
+{
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  background-image: url("..images/nav.png");
+}
+
+.seccion_pri, a
+{
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 40px;
+  line-height: 0px;
+
+}
+
+.seccion_pri, a:hover
+{
+  color: var(--verde3-color);
+  cursor: pointer;
+}
+
+.img_logo
+{
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn
+{
+  from
+  {
+    opacity: 0;
+  }
+  to
+  {
+    opacity: 1;
+  }
+}
